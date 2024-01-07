@@ -173,12 +173,45 @@ nav{
     width: 100%;
     min-height: 100vh;
     background-color: #EFEAE3;
+    padding: 8vw 0;
 }
 
-#moving-text {
-    width: 100%;
-    background-color: #EFEAE3;
+#moving-text{
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    overflow: hidden;
 }
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 11s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
 #moving-text h1{
     font-size: 9vw;
+    display: inline-block;
+}
+
+#circle{
+   height: 70px;
+   width: 70px; 
+   border-radius: 50%;
+   background: #fe330a;
+   display: inline-block;
+   margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from{
+        transform: translate(0);
+    }to{
+         transform: translateX(-100%);
+    }
 }
