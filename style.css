@@ -276,20 +276,21 @@ nav{
 }
 
 #page3{
-height: 100vh;
+min-height: 100vh;
 width:100%;
 background-color: #EFEAE3;
+padding: 4vw 0;
 }
 
 .elem{
     height: 150px;
     width: 100%;
     position: relative;
-    border-top: .3px solid #868585;
     display: flex;
     align-items: center;
     padding: 4vw 2vw;
     overflow: hidden;
+    border-bottom: 1px solid #dadada;
 }
 
 .elem h2{
