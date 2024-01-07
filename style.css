@@ -167,3 +167,18 @@ nav{
     }
     
 }
+
+
+#page2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+}
+
+#moving-text {
+    width: 100%;
+    background-color: #EFEAE3;
+}
+#moving-text h1{
+    font-size: 9vw;
+}
