@@ -215,3 +215,21 @@ nav{
          transform: translateX(-100%);
     }
 }
+
+#page2-bottom{
+    height: 60vh;
+    width: 100%;
+    background-color:aliceblue ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+}
+
+#page2-bottom h1{
+    font-size: 3vw;
+    width: 50%;
+}
+#bottom-part2{
+    width: 30%;
+}
