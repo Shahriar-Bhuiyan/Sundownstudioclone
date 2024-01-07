@@ -296,6 +296,7 @@ background-color: #EFEAE3;
     font-size: 3vw;
     position: relative;
     z-index: 99;
+    font-weight: 600;
 }
 
 .elem .overlay{
