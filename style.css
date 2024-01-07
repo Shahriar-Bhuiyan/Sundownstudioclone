@@ -236,7 +236,6 @@ nav{
 }
 #bottom-part2{
     width: 20%;
-    background-color: aqua;
 }
 #bottom-part2 img{
     width: 100%;
@@ -280,6 +279,23 @@ min-height: 100vh;
 width:100%;
 background-color: #EFEAE3;
 padding: 4vw 0;
+}
+.elem_title{
+    padding: 2vw 2vw;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+.small-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fe330a;
+}
+.elem_title p{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
 }
 
 .elem{
