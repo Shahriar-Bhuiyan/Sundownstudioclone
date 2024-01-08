@@ -74,13 +74,13 @@ nav{
 }
 
 #center{
-    height: 74vh;
+    height:65vh;
     width: 100%;
     /* background-color: orange; */
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-bottom: 2.5vw;
+    padding-bottom:2vh;
 }
 
 #left h3{
@@ -98,7 +98,7 @@ nav{
 
 #page1 video{
     border-radius: 30px;
-    margin-top: 4vw;
+    margin-top: 9vw;
     width: 100%;
     position: relative;
 }
@@ -107,7 +107,7 @@ nav{
     position: absolute;
     width: 46vw;
     height: 36vw;
-    top: 85vh;
+    top: 75vh;
     right: 0;
 }
 
