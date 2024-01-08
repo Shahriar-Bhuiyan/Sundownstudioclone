@@ -340,3 +340,20 @@ padding: 4vw 0;
 .elem:hover .overlay{
 top: 0;
 }
+
+#elem-container{
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 23vw;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    top: 26%;
+    z-index: 9999;
+    display: none;
+    background-size: contain;
+    object-fit: fill;
+    pointer-events: none;
+}
