@@ -22,3 +22,33 @@ var elme = document.querySelectorAll('.elem');
          fixed.style.backgroundImage = `url(${image})`
       })
   })
+  
+  var slider = document.querySelector('.swiper');
+  var pointer = document.querySelector('.pointer');
+
+
+slider.addEventListener('mousemove',function(e){
+  pointer.style.display = 'block'
+  pointer.style.top = e.clientY +'px';
+  pointer.style.left = e.clientX +'px';
+  
+  console.log(e)
+})
+
+
+
+slider.addEventListener('mouseleave',function(e){
+  pointer.style.display = 'none'
+})
+
+
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
