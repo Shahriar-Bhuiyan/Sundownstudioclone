@@ -25,20 +25,19 @@ var elme = document.querySelectorAll('.elem');
   
   var slider = document.querySelector('.swiper');
   var pointer = document.querySelector('.pointer');
+  const size = pointer.getClientRects();
+
+  
 
 
 slider.addEventListener('mousemove',function(e){
-  pointer.style.display = 'block'
-  pointer.style.top = e.clientY +'px';
-  pointer.style.left = e.clientX +'px';
-  
-  console.log(e)
+  gsap.to(pointer, { duration: 0.3,opacity:1, left: e.clientX, top: e.clientY, ease: "power2.out",display:'flex' });
 })
 
 
 
 slider.addEventListener('mouseleave',function(e){
-  pointer.style.display = 'none'
+  gsap.fromTo(pointer,{opacity:1} ,{ opacity: 0, duration: 0.3,scale:-1, onComplete: () => pointer.style.display = 'none' });
 })
 
 
