@@ -13,7 +13,7 @@ html,body{
 }
 #main{
     position: relative;
-    z-index: 99;
+    z-index: 10;
 }
 
 #page1{
@@ -30,9 +30,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 1000;
     
 }
-
+nav img{
+    transition: all .2s ease;
+}
 #nav_links{
     display: flex;
     gap:1vw;
@@ -50,9 +54,12 @@ nav{
    position: relative;
    overflow: hidden;
    z-index: 99;
-   transition: all ease .2s;
+   transition: all .4s ease ;
+   
    
 }
+
+
 
 #nav_links h3::after{
     content: '';
@@ -76,7 +83,9 @@ nav{
     color: white;
     bottom: 0;
 }
-
+.mobile_menu{
+    display: none;
+}
 #center{
     height:65vh;
     width: 100%;
@@ -453,4 +462,59 @@ top: 0;
     width: 100%;
     background-color: red;
     border-top: 1px solid #dadada;
+}
+
+#full-src{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #13131389;
+    z-index: 999;
+    top: 100%;
+    transition: all ease .4s;
+
+}
+
+#full-div1{
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all ease .3s;
+
+}
+
+@media (max-width:600px){
+     #page1{
+        padding: 0 0;
+     }
+    nav{
+        padding: 8vw 5vw;
+        background-color: white;
+        img{
+            scale: 0.7;
+        }
+    }
+    .mobile_menu{
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+        background: wheat;
+    }
+    
+    #nav_links{
+        display: flex;
+        gap:1vw;
+        align-items: center;
+        flex-wrap: nowrap;
+        display: none;
+    }
+    
+    
+
 }
